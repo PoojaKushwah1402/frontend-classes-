@@ -5,57 +5,43 @@
     <title>My Application</title>
     <link rel="icon" type="image/x-icon" href="https://media.geeksforgeeks.org/gfg-gg-logo.svg">
     <style>
-        /* <!-- selector{
+        /* <!-- 
+    selector{
         key:value;
         key:value;
     }
 
     div{
-
     }
-
     h1{
-
     }
-
-    nav{
-        
+    nav{     
     }
     //ID selector 
-
     #id{
-
     }
-
     #navigation546{
-
+        color:red
     }
-
     //Class
-
         .classname{
-
         }
-
     //element selector
     //class selector
     //id selector --> */
-
         /* element styling */
         * {
             /* this will style each and every element */
             font-family: cursive;
-            border-bottom: 1px solid blue;
+            /* border-bottom: 1px solid blue; */
             /* background-color: rgb(251, 249, 246); */
             /* border: 1px solid black; */
         }
 
         body {
             background-color: rgb(251, 249, 246);
-            border: 10px solid black;
-
+            border: 1px solid black;
             /* text-align: center; */
-
         }
 
         nav {
@@ -66,6 +52,45 @@
         .temp-1 {
             text-align: right;
         }
+
+        nav {
+            background-color: rgb(57, 57, 57);
+            color: antiquewhite;
+
+        }
+
+        .imag-gly {
+            /* border: thickness linetype color; */
+            border: 2px solid rgb(37, 35, 36);
+            height: 300px;
+            width: 300px;
+            border-radius: 300px;
+            color: aqua;
+        }
+
+        #navigation546 {
+            height: 60px;
+        }
+
+        .href-f {
+            color: aliceblue;
+            /* text-decoration: none; */
+            text-decoration-thickness: 3px;
+            text-decoration-line: underline;
+            text-decoration-color: aqua;
+            text-transform: uppercase;
+
+        }
+
+
+
+        header {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            font-style: italic;
+        }
     </style>
 
 
@@ -75,13 +100,14 @@
 
 <body>
     <nav id="navigation546">
-        <a href="#1"> Home </a> |
-        <a href="#1"> about </a> |
-        <a href="#1"> connect </a> |
-        <a href="#1"> Partners </a> |
+        <a class="href-f" href="#1"> Home </a> |
+        <a class="href-f" href="#1"> about </a> |
+        <a class="href-f" href="#1"> connect </a> |
+        <a class="href-f" href="#1"> Partners </a> |
     </nav>
+
     <header>
-        <h1> Welcome to my website </h1>
+        <h1> Welcome to my website</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias corrupti voluptatem ratione labore
             quaerat tenetur, fuga culpa in ipsa quo qui similique corporis enim sapiente unde ipsum, incidunt
             perspiciatis veniam!</p>
@@ -144,7 +170,7 @@
             <h3>Select your language</h3>
             <div>
                 <label>HTML</label>
-                <input type="checkbox" name="html" />
+                <input type="checkbox" name="html" required />
             </div>
             <div>
                 <label>CSS</label>
