@@ -6,9 +6,16 @@
 -> external css  (pref 3)
     css in a seperate file  */
 
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
  
  body {
-        /* border: 2px solid lightblue; */
+        border: 2px solid lightblue;
     }
 
     .head-conatiner2 {
@@ -82,4 +89,47 @@
     a:active{
         text-decoration: none;
         color: pink;
+    }
+
+    #relative{
+        position: relative;
+        left: 100px;
+    }
+
+    #pos-fixed{
+        /* position: fixed; */
+        background-color: bisque;
+        width: 500px;
+        top: 0px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conatiner{
+        margin-top: 70px;
+        border: 2px solid red;
+        position: relative;
+
+    }
+
+
+    .position-prop{
+        height: 100px;
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid chocolate;
+    }
+
+    .sticky{
+        /* position: sticky; */
+        top: 200px;
+        background-color: rgb(221, 199, 199);
+    }
+
+    .absolute{
+        position: absolute;
+        top: 100px;
+        background-color: aquamarine;
     }
