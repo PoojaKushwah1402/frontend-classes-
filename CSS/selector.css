@@ -1,0 +1,54 @@
+
+ /* element selectors */
+h1, h3{
+    color: red;
+}
+
+h2{
+    color: pink;
+}
+
+.container{
+    border: 2px solid cyan;
+    padding: 10px;
+}
+
+span {
+    border: 1px solid green;
+}
+/* Combinator selector */
+
+     /*1.  descendent selector */
+            /* .container span{
+                background-color: beige;
+                color: blue;
+            }  */
+    /* 2 :  Child selector  */
+            /* .container>.container-item {
+                background-color: rgb(191, 111, 79);
+                color: rgb(0, 103, 83);
+            } */
+    /* 3 > Adjecent sibling selector: */
+
+    /* .container-item + div{ */
+        /* border: 2px solid blue;
+        background-color: aqua; */
+    /* } */
+    /* 4 > general sibling selector: */
+
+    /* .container-item~div {
+        border: 2px solid blue;
+        background-color: aqua;
+    } */
+
+    /*-> Pseudo class selector */
+        .container-item1:hover{
+            background-color: cadetblue;
+            color: white;
+           
+        }
+
+    input:focus {
+        background-color: aquamarine;
+        border: none;
+    }
