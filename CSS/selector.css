@@ -30,10 +30,10 @@ span {
             } */
     /* 3 > Adjecent sibling selector: */
 
-    /* .container-item + div{ */
+    .container-item + div{ 
         /* border: 2px solid blue;
         background-color: aqua; */
-    /* } */
+     }
     /* 4 > general sibling selector: */
 
     /* .container-item~div {
@@ -49,6 +49,67 @@ span {
         }
 
     input:focus {
+        background-color: rgb(212, 241, 231);
+    }
+
+
+    .form{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    input{
+        margin: 10px;
+    }
+
+    /* Attribute selectore */
+
+    input[type="text"] {
         background-color: aquamarine;
+    }
+
+    input[type="number"] {
+        background-color: rgb(127, 127, 255);
+    }
+
+    input[type="date"] {
+        background-color: rgb(255, 246, 127);
+    }
+
+    /* Pseudo element selector : */
+
+    p::first-line{
+        color: rgb(12, 154, 109);
+    }
+
+    .span-color{
+        color: aquamarine;
         border: none;
     }
+
+    p::before{
+        content: 'SAY HELLO -';
+        color: rgb(15, 15, 204);
+        background-color: antiquewhite;
+    }
+
+    /* div::after {
+        content: 'SAY HELLO from DIV -';
+        color: rgb(7, 247, 251);
+    } */
+
+
+    .new-container{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+        /* .new-container-item::before{
+        content: 'none';
+        margin: 20px;
+        padding: 30px;
+    } */
+
+    

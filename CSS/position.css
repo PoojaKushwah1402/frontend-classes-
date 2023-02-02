@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    padding: 1%;
+}
+
+.container{
+    position: relative;
+    top: 80px;
+    font-size: 32px;
+}
+
+h1{
+    position: sticky;
+    top: 30px;
+    border: 2px solid rgb(0, 170, 255);
+    background-color: aquamarine;
+}
+
+.container-item{
+    border: 2px solid black;
+    margin: 10px;
+}
