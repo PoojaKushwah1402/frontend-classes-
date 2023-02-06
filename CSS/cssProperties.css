@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-color: azure;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid lightblue;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.opacity-cont{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(6, 110, 145);
+    margin-left: 100px;
+    margin: 40px;
+    opacity: 0.2;
+}
+
+.opacity-cont:hover{
+    opacity: 1;
+}
+
+.box-shadow{
+    border: 2px solid lightblue;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* box-shadow: horizontal vertical blurrefect spreadradius color, repeat; */
+    box-shadow: 5px 5px 5px 7px rgb(2, 36, 50) , 9px 9px 10px red inset;
+}
+
+.box-shadow p {
+    margin: 10px;
+    /* text-shadow: 'horizontalShadow verticalShadow blurreffect color', repeat ;  */
+    text-shadow: 3px 3px 3px 5px rgb(217, 194, 17), 5px 5px 2px blue;
+
+}
+
+
+
+
+@media (max-width: 800px) {
+    .container {
+            background-color: rgb(12, 12, 12);
+            color: azure;
+            font-size: 30px;
+            border: 1px solid rgb(6, 85, 112);
+        }
+}
+
+/* /browser that donot support media queries */
+@media only screen and (max-width: 800px) {
+    p{
+        color: red;
+    }
+}

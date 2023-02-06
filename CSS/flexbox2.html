@@ -1,0 +1,90 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        /* flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between; //rows or columns */
+      }
+
+      .flex-item {
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        /* The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties. */
+        align-self: center;
+      }
+
+      /* only screen: The only keyword is used to prevent older browsers that do not support media queries with media features from applying the specified styles. */
+      @media only screen and (max-width: 800px) {
+        .flex-container {
+          background-color: aqua;
+          text-shadow: 12px 12px;
+          text-shadow: 2px 2px 13px red, 2px 2px 15px green;
+          /* horizontal vertical blurreffect color , comma seperated for 2 color */
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+          box-shadow: 10px 10px lightblue inset;
+          /* horizontal vertical blurreffect spreadRadius color , comma seperated for 2 or more color */
+          /* The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow. */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The opacity property specifies the opacity/transparency of an element. 0-1 -->
+
+    <div class="flex-container">
+      <div class="flex-item" style="flex: 1">1</div>
+      <div class="flex-item" style="flex-shrink: 0">2</div>
+      <div class="flex-item" style="flex-basis: 200px">3</div>
+      <div class="flex-item">4</div>
+
+      <pre>
+      CSS defines three types of gradients: 
+      Linear Gradients (goes down/up/left/right/diagonally) 
+      Radial Gradients (defined by their center)
+      Conic Gradients (rotated around a center point)
+      </pre>
+      <pre>
+      CSS Linear Gradients 
+      background-image: linear-gradient(direction,      color-stop1, color-stop2, ...);
+        background-image: linear-gradient(to right, red , yellow);
+        background-image: linear-gradient(to bottom right, red, yellow);
+        background-image: linear-gradient(red, yellow, green);
+        background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        Using Transparency
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+
+        REPEATING
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+
+
+        CSS Radial Gradients
+        A radial gradient is defined by its center.
+        background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+        background-image: radial-gradient(red, yellow, green);
+        background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+        background-image: radial-gradient(circle, red, yellow, green);
+
+
+        CSS Conic Gradients
+        A conic gradient is a gradient with color transitions rotated around a center point.
+        background-image: conic-gradient(red, yellow, green);
+        background-image: conic-gradient(red, yellow, green, blue, black);
+        background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+
+      </pre>
+    </div>
+  </body>
+</html>

@@ -61,3 +61,8 @@
     justify-content: space-between;
     height: 200px;
 }
+
+.flex-item-propertry{
+    align-self: flex-end;
+    flex-basis: 200px;
+}
