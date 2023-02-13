@@ -26,7 +26,7 @@
 
 .linear{
     /* background-image: linear-gradient(direction,color1,color2,....); */
-    background-image: linear-gradient(to right, green, cyan, pink );
+    background-image: linear-gradient(to right, rgb(50, 158, 50), cyan, pink );
     /* background-image: linear-gradient(to bottom left, green 15%, cyan 18%, pink 10%); */
     /* background-image: url(path); */
 }
@@ -93,12 +93,12 @@
     transition-duration: 2s;
     transition-delay: .5s;
     transition-timing-function:ease-out; */
-    transition: width 1s 0s ease-out, height 1s 0s ease-out;
+    transition: width 1s 0s ease-out, height 2s 0s ease-out;
 }
 
 .transition-basic:hover{
     width: 200px;
-    /* height: 200px; */
+    height: 200px;
 }
 
 .transition-transform{
@@ -108,13 +108,29 @@
     border: 1px solid rgb(6, 72, 94);
     background-color: lightblue;
     margin: 20px;
-    transition: transform 2s .2s linear, height 2s .2s linear, width 2s .2s linear,font-size 2s .2s linear;
+    transition: transform 3s .2s linear;
     font-size: 10px;
 }
 
 .transition-transform:hover{
-    transform: rotate(360deg);
-    height: 100px;
+    /* transform: rotate(360deg); */
+    transform: skewX(80deg);
+    /* height: 100px;
     width: 100px;
-    font-size: larger;
+    font-size: larger; */
+}
+
+.top{
+    border: 1px solid #782222;
+    font-size: 20px;
+}
+
+.child{
+    border: 1px solid #116411;
+    font-size: 0.5em;
+}
+
+h1{
+  color: green;
+  font-size: 12px;  
 }

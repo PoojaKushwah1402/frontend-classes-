@@ -1,13 +1,26 @@
 /** @format */
+var name = "jhon";
 
-let obj1 = {};
-let obj2 = {};
-
-function inputFunc() {
-  console.log("from input func");
+function t2() {
+  let c = "hello";
+  console.log(c);
+  console.log("hello");
+  name = "other";
 }
 
-obj1.random = inputFunc;
-obj2.random1 = inputFunc;
+function t1() {
+  function insideT1() {
+    console.log(ttttt);
+  }
+  console.log("asdsd");
+  insideT1();
+}
 
-obj1.inputFunc();
+const arrowFunc = () => {};
+var arrowFuncWithVar = () => {};
+
+const h = "";
+console.log("cfsdnh");
+t2();
+console.log("gsc");
+// t1();

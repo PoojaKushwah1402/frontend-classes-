@@ -59,7 +59,7 @@ p{
 
 
 
-@media (max-width: 800px) {
+@media (min-width:300px) {
     .container {
             background-color: rgb(12, 12, 12);
             color: azure;
@@ -69,7 +69,7 @@ p{
 }
 
 /* /browser that donot support media queries */
-@media only screen and (max-width: 800px) {
+@media only screen  and (max-width: 800px) {
     p{
         color: red;
     }
